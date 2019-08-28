@@ -1,1 +1,361 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.font-heavy {
+  font-family: "Playfair Display", serif;
+  color: #333;
+}
+@media (max-width: 500px) {
+  .font-heavy {
+    text-align: center;
+  }
+}
+.font-light {
+  font-family: "Roboto", sans-serif;
+  color: #666;
+  text-decoration: none;
+  line-height: 1.7;
+}
+@media (max-width: 500px) {
+  .font-light {
+    text-align: center;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+.master-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .master-container {
+    width: 400px;
+  }
+}
+.master-container nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px 0px;
+}
+@media (max-width: 500px) {
+  .master-container nav {
+    justify-content: space-evenly;
+  }
+}
+.master-container a {
+  margin: 0px 15px;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #666;
+  text-decoration: none;
+  line-height: 1.7;
+}
+@media (max-width: 500px) {
+  .master-container a {
+    text-align: center;
+  }
+}
+.master-container .top-section {
+  background: #f7f7f7;
+  padding: 50px 40px;
+  margin: 15px 0px;
+}
+@media (max-width: 500px) {
+  .master-container .top-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.master-container .top-section h1 {
+  font-family: "Playfair Display", serif;
+  color: #333;
+  margin: 15px 0;
+  font-size: 4.5rem;
+}
+@media (max-width: 500px) {
+  .master-container .top-section h1 {
+    text-align: center;
+  }
+}
+.master-container .top-section .divider {
+  width: 100%;
+  height: 1px;
+  background: #dddddd;
+  margin: 25px 0px;
+}
+.master-container .top-section p {
+  font-family: "Roboto", sans-serif;
+  color: #666;
+  text-decoration: none;
+  line-height: 1.7;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .master-container .top-section p {
+    text-align: center;
+  }
+}
+.master-container .top-section button {
+  padding: 16px 35px;
+  background: #ff6506;
+  color: white;
+  border: none;
+  margin: 20px 0px 0px 0px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+.master-container .top-section img {
+  border-radius: 15px;
+  box-shadow: 0px 10px 5px rgba(51, 51, 51, 0.09);
+}
+.master-container .middle-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0px;
+}
+.master-container .middle-section .lockup-left {
+  width: 48%;
+}
+.master-container .middle-section .lockup-left h2 {
+  font-family: "Playfair Display", serif;
+  color: #333;
+  margin: 10px 0px;
+  font-size: 2.4rem;
+}
+@media (max-width: 500px) {
+  .master-container .middle-section .lockup-left h2 {
+    text-align: center;
+  }
+}
+.master-container .middle-section .lockup-left p {
+  font-family: "Roboto", sans-serif;
+  color: #666;
+  text-decoration: none;
+  line-height: 1.7;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .master-container .middle-section .lockup-left p {
+    text-align: center;
+  }
+}
+.master-container .lockup-right {
+  background: white;
+  width: 48%;
+}
+.master-container .lockup-right h2 {
+  font-family: "Playfair Display", serif;
+  color: #333;
+  margin: 10px 0px;
+  font-size: 2.4rem;
+}
+@media (max-width: 500px) {
+  .master-container .lockup-right h2 {
+    text-align: center;
+  }
+}
+.master-container .lockup-right ul {
+  font-family: "Roboto", sans-serif;
+  color: #666;
+  text-decoration: none;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  border: solid 1px #c2c2c2;
+  border-radius: 5px;
+  margin: 15px 0px;
+}
+@media (max-width: 500px) {
+  .master-container .lockup-right ul {
+    text-align: center;
+  }
+}
+.master-container .lockup-right li {
+  border-bottom: Solid 1px #c2c2c2;
+  padding: 10px 10px;
+}
+@media (max-width: 500px) {
+  .master-container .bottom-section {
+    display: none;
+  }
+}
+.master-container .bottom-section table {
+  margin: 40px 0px;
+  width: 100%;
+  text-align: left;
+}
+.master-container .bottom-section table th {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #666;
+  text-decoration: none;
+  line-height: 1.7;
+  padding: 10px 0px;
+  font-weight: bold;
+  border-top: solid 1px #c2c2c2;
+}
+@media (max-width: 500px) {
+  .master-container .bottom-section table th {
+    text-align: center;
+  }
+}
+.master-container .bottom-section table td {
+  font-family: "Roboto", sans-serif;
+  color: #666;
+  text-decoration: none;
+  line-height: 1.7;
+  font-size: 1.4rem;
+  padding: 10px 0px;
+  border-top: solid 1px #c2c2c2;
+}
+@media (max-width: 500px) {
+  .master-container .bottom-section table td {
+    text-align: center;
+  }
+}
+.master-container .bottom-section table tr:nth-child(odd) {
+  background: #f7f7f7;
+}
+.master-container footer {
+  background: #666;
+}
+.master-container footer p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 25px 0px;
+}
